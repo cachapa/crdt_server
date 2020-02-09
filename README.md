@@ -1,10 +1,10 @@
 # CRDT Server
 
-Generic REST server based on Conflict-free Replicated Data Types (CRDTs).
+Generic REST + WebSocket server based on Conflict-free Replicated Data Types (CRDTs).
 
 Serves as a demonstration of real-world use of the [CRDT package](https://github.com/cachapa/crdt).
 
-This server listens for REST requests and maintains independent CRDTs for each route (created lazily).
+This server listens for REST requests and WebSocket connections and maintains independent CRDTs for each route (created lazily).
 It makes it trivial to test APIs by simply calling a '/users' or '/todo' routes.
 
 ## Usage
@@ -32,7 +32,6 @@ curl -d '{"x":{"hlc":"2020-02-09T12:04:13.476Z-0000","value":{"Learn CRDTs":fals
 
 ## To do
 
-- [ ] Monitor real-time changes using websockets
 - [ ] Optional parameters for fetching CRDT subsets (partial merges)
 
 ## Features and bugs

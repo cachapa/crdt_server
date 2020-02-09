@@ -2,10 +2,10 @@
 
 Generic REST server based on Conflict-free Replicated Data Types (CRDTs).
 
-Serves as a demonstration of real-world use of the [CRDT library](https://github.com/cachapa/crdt).
+Serves as a demonstration of real-world use of the [CRDT package](https://github.com/cachapa/crdt).
 
 This server listens for REST requests and maintains independent CRDTs for each route (created lazily).
-This makes it trivial to test APIs by simply calling a /users or /todo routes.
+It makes it trivial to test APIs by simply calling a '/users' or '/todo' routes.
 
 ## Usage
 
